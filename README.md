@@ -140,7 +140,7 @@ Die Bilddatei für den Hintergrund EXTENSION-NAME.IMAGE-FORMAT benennen, für da
 
 #### 3. Die Datei index.jsx, zu finden unter folgendem Pfad, öffnen.	
 	
-	scratch-gui/src/lib/libraries/extensions/index.jsx`
+	scratch-gui/src/lib/libraries/extensions/index.jsx
 	
 #### 4. In der Datei alle notwendigen Informationen und Referenzen für die Darstellung der neuen Erweiterung in der Scratch-Bibliothek angeben.
 	
