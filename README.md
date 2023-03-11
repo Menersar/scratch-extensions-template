@@ -1,4 +1,4 @@
-# Vorwrt und Credits
+# Vorwort und Credits
 
 Da ich bei allen Anleitungen und Dokumentationen zur Erstellung von Scratch-3-Erweiterungen auf diverse Probleme und Error, meist aufgrund diverser Paket-Inkompatibilitäten, gestoßen bin habe ich nach langer Eigenrecherche die folgende Anleitung zur Erstellung von Scratch-3-Erweiterungen zusammengetragen.
 
@@ -12,7 +12,7 @@ https://github.com/MrYsLab/s3onegpio
 
 ## 1 Entwicklungsumgebung vorbereiten
 
-### Raspberry Pi OS -
+## Raspberry Pi OS
 	
 	nvm-Verion-Manager installieren.
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.35.3/install.sh | bash
