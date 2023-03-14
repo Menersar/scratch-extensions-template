@@ -14,7 +14,7 @@ https://github.com/MrYsLab/s3onegpio
 
 ## 1. ENTWICKLUNGSUMGEBUNG VORBEREITEN
 
-### 1.1 RASPBERRY-PI-OS
+### 1.1. RASPBERRY-PI-OS
 	
 nvm-Verion-Manager installieren.	
 
@@ -89,26 +89,26 @@ Nach erfolgreichem Kompilieren werden Änderungen, wie neue Erweiterungen, über
 		
 Jede Extension kann einen oder mehrere Blöcke haben
 	
-#### 1. Einen Ordner in folgendem Pfad hinzufügen.
+#### 4.1. Einen Ordner in folgendem Pfad hinzufügen.
 
 (Den Ordner scratch3_EXTENSION-NAME benennen; statt EXTENSION-NAME den Namen der neuen Erweiterung angeben.)
 
 	scratch-vm/src/extensions/scratch3_EXTENSION-NAME
 
 
-#### 2. In dem Ordner eine neue Datei, wie folgt, anlegen.
+#### 4.2. In dem Ordner eine neue Datei, wie folgt, anlegen.
 
 (Die Datei index.js benennen.)
 
 	scratch-vm/src/extensions/scratch3_EXTENSION-NAME/index.js
 
-#### 3. In der Datei werden die Blöcke der Erweiterung angegeben und definiert.
+#### 4.3. In der Datei werden die Blöcke der Erweiterung angegeben und definiert.
 
-#### 4. Die Datei, die der Implementierung des Erweiterungsmenüs dient, zu finden unter folgendem Pfad, öffnen.
+#### 4.4. Die Datei, die der Implementierung des Erweiterungsmenüs dient, zu finden unter folgendem Pfad, öffnen.
 
 	scratch-vm/src/extension-support/extension-manager.js
 
-#### 5. In der Datei die neue Erweiterung, wie folgt, angeben und so dem Projekt als Erweiterung hinzufügen.
+#### 4.5. In der Datei die neue Erweiterung, wie folgt, angeben und so dem Projekt als Erweiterung hinzufügen.
 Die Zeile EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH') in der Datei hinzufügen. <br />
 (Statt EXTENSION-ID die ID der neuen Extension (aus index.js) angeben.) <br />
 (Statt EXTENSION-RELATIVE-PATH den Pfad zu scratch3_EXTENSION-NAME angeben.)
@@ -119,14 +119,14 @@ Die Zeile EXTENSION-ID: () => require ('EXTENSION-RELATIVE-PATH') in der Datei h
 
 Der neu implementierte Scratch-Block muss noch in die Erweiterungsbibliothek von Scratch hinzugefügt werden.
 	
-#### 1. Um die Erweiterung mit einem Bild in der Erweiterungsbibliothek darzustellen einen Ordner wie folget, in dem angegebenen Pfad, hinzufügen.
+#### 5.1. Um die Erweiterung mit einem Bild in der Erweiterungsbibliothek darzustellen einen Ordner wie folget, in dem angegebenen Pfad, hinzufügen.
 Den Ordner EXTENSION-NAME bennennen. <br />
 (Keine Pflicht, aber Erweiterung einfacher wiederzufinden.) <br />
 (Statt EXTENSION-NAME entsprechend den Namen der neuen Erweiterung angeben.)
 
 	scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME
 
-#### 2. In den Ordner zwei Bilder, für die Darstellung der Erweiterung in der Scratch-Bibliothek, wie folgt platzieren.
+#### 5.2. In den Ordner zwei Bilder, für die Darstellung der Erweiterung in der Scratch-Bibliothek, wie folgt platzieren.
 Die Größe der Bilddatei für den Hintergrund des Eintrags sollte 600 x 372, die Größe des Icons 180 x 180 betragen. <br />
 (Als Format habe ich png, jpg und svg auf korrekte Funktionsweise getestet.) <br />
 
@@ -138,10 +138,10 @@ Die Bilddatei für den Hintergrund EXTENSION-NAME.IMAGE-FORMAT benennen, für da
 	scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME-small.IMAGE-FORMAT
 	scratch-gui/src/lib/libraries/extensions/EXTENSION-NAME/EXTENSION-NAME.IMAGE-FORMAT
 
-#### 3. Die Datei index.jsx, zu finden unter folgendem Pfad, öffnen.	
+#### 5.3. Die Datei index.jsx, zu finden unter folgendem Pfad, öffnen.	
 	
 	scratch-gui/src/lib/libraries/extensions/index.jsx
 	
-#### 4. In der Datei alle notwendigen Informationen und Referenzen für die Darstellung der neuen Erweiterung in der Scratch-Bibliothek angeben.
+#### 5.4. In der Datei alle notwendigen Informationen und Referenzen für die Darstellung der neuen Erweiterung in der Scratch-Bibliothek angeben.
 	
-#### 5. Die Scratch-GUI starten, siehe dazu 3 GUI starten.
+#### 5.5. Die Scratch-GUI starten, siehe dazu 3 GUI starten.
